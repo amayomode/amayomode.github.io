@@ -1,46 +1,263 @@
 <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
 
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tic Tac Toe</title>
-  
-  <link rel="stylesheet" href="style.css">
+		<title>Amayo II</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+        <meta name="author" content="templatemo">
+        
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+		<!-- animate -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- fullpage -->
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<!-- custom -->
+		<link rel="stylesheet" href="css/style.css">
 
-<body>
+		<!--Favicon-->
+		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 
-	<table>
-		<tr>
-			<td class="cell" id="0"></td>
-			<td class="cell" id="1"></td>
-			<td class="cell" id="2"></td>
-		</tr>
-		<tr>
-			<td class="cell" id="3"></td>
-			<td class="cell" id="4"></td>
-			<td class="cell" id="5"></td>
-		</tr>
-		<tr>
-			<td class="cell" id="6"></td>
-			<td class="cell" id="7"></td>
-			<td class="cell" id="8"></td>
-		</tr>
-	</table>
-	<div class="endgame">
-		<div class="text"></div>
+	</head>
+	<body>
+
+	<div id="fullpage">
+
+		<!-- start home -->
+		<div id="home" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
+						<h3>Eyes forward, Heart open</h3>
+						<h1>AMAYO MORDECAI</h1>
+						<h2 class="rotate">DOCTOR, PHYSIOLOGIST, HOBBYIST PROGRAMMGER, UI &AMP; UX DESIGNER</h2>
+						<p class= "quote">“Don't explain your philosophy. Embody it.”</p>
+						<p class= "quote">- Epictetus</p>
+						<a href="#work" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">Get started</a>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end home -->
+
+		<!-- start work -->
+		<div id="work" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow bounce">
+						<h2>WHAT I DO</h2>
+					</div>
+                </div>  
+                
+                <div class="row">
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-user-md"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Medicine</h3>
+								<p>Being a doctor is my primary calling, training and duty. I have a personal interest in cardiovascular medicine and genomics.</p>
+							</div>
+						</div>
+					</div>
+                    
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-laptop"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Programming</h3>
+								<p>Before I was awe struck by the ICU I loved the CPU. I mostly code, professionally, when I am doing research in bioinformatics or, leisurely, in mobile and web app development.</p>
+							</div>
+						</div>
+					</div>
+                    
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-edit"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">UI &AMP; UX Design</h3>
+								<p>A book is only as good as its cover, to this end I work with peers to create sketches and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. </p>
+							</div>
+						</div>
+					</div>
+                    
+				</div>
+			</div>
+		</div>
+		<!-- end work -->
+
+		<!-- start about -->
+		<div id="about" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
+						<h2>HI,  I AM</h2>
+						<h4>AMAYO MORDECAI</h4>
+						<p>I am among the few who are streching their hands in an attempt to bridge the gap between medicine and computer science because I believe that the collaboration of these disciplines will revolutionize health care.
+							  As such, I spend most of my research efforts in finding ways on how concepts such as machine learning and bioinformatics can be used in improving medical research, diagnosis and service delivery.
+							  Because of the nature of my research, I have gained a good mastery of Python, R and Motlab
+						</p>
+						<p>I once had a patient called Jack and he was always dull. On investigation I realized that he never took a break from his work and I recommended that he plays once in a while.
+							Following my own advice; when I am not studying or practicing medicine, I spend my time drawing and doing some graphic design. I also 'goof' around by creating and playing indie games in javascript and python. 
+							I have linked a few of them my arcade below the rest can be found at my github repos, feel free to try them out but avoid the tic-tac-toe as it is unbeatable. Lastly, I would like to say that HTML is not a programming language and PHP is rubbish, change my mind. 
+						</p>
+					</div>
+					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
+						<h2 class="text-top"></h2>
+						<h4 class="text-top">SKILLS</h4>
+						<span  class="text-top">Python and R<small>90%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+							</div>
+						<span>Bioinformatics<small>85%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+							</div>
+						<span>Mobile Apps <small>80%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+							</div>
+						<span>Web Development. <small>80%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end about -->
+
+		<!-- start portfolio -->
+		<div id="portfolio" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounce">ARCADE</h2>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/portfolio-img1.jpg" class="img-responsive" alt="portfolio img">
+							<a href="Arcade/un-beatable-tic-tac-toe/index.html">
+							<div class="portfolio-overlay">
+								<h4>Tic-Tac-Toe</h4>
+								<h5>Unbeatable</h5>
+							</div>
+							</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/portfolio-img2.png" class="img-responsive" alt="portfolio img">
+							<a href = "Arcade/Flappy Bird/index.html">
+							<div class="portfolio-overlay">
+								<h4>Flappy Bird</h4>
+								<h5>Remake</h5>
+							</div>
+							</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/portfolio-img3.jpg" class="img-responsive" alt="portfolio img">
+							<a href="Arcade/snakeGame/index.html">
+							<div class="portfolio-overlay">
+								<h4>Snake Game</h4>
+								<h5>Easy</h5>
+							</div>
+							</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-    <div class = "selectSym">
-    <p>Play As</p>
-      <button onClick="selectSym('X')">X</button>
-      <button onClick="selectSym('O')">O</button>
-    </div>
-    <div class= 'replay'>
-        <button onClick="startGame()">Replay</button>
-    </div>
+	<!-- end portfolio -->
 
-  <script src="script.js"></script>
-</body>
+		<!-- start contact -->
+		<div id="contact" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+						<address>
+							<p class="contact-title">CONTACT ME</p>
+							<p><i class="fa fa-phone"></i> +254-711-141-533</p>
+							<p><i class="fa fa-envelope-o"></i> amayomordecai@gmail.com</p>
+							<p><i class="fa fa-map-marker"></i> 120 Old Walking Street, GL 16060</p>
+						</address>
+					</div>
+					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
+							<p class="contact-title">SOCIALS</p>
+							<p><a href = "https://twitter.com/amayo_mordecai"><i class="fa fa-twitter"></i></a> @amayo_mordecai</p>
+							<p><a href="https://github.com/amayomode"><i class="fa fa-github"></i></a>amayomode</p>
+							<p><a href="https://www.instagram.com/amayo_ii_/"><i class="fa fa-instagram"></i></a> @amayo_ii_</p>
+					</div>
+					<div class="col-md-1 col-sm-1"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end contact -->
+
+		<!-- start footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
+						<p>Copyright &copy; 2020 Amayo Mordecai's Personal Profile </p>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+	</div>
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- fullpage -->
+		<script src="js/jquery.fullPage.js"></script>
+		<!-- smoothScroll -->
+		<script src="js/smoothscroll.js"></script>
+		<!-- wow -->
+		<script src="js/wow.min.js"></script>
+		<!-- text rotater -->
+		<script src="js/jquery.simple-text-rotator.js"></script>
+		<!-- custom -->
+		<script src="js/custom.js"></script>
+
+	</body>
 </html>

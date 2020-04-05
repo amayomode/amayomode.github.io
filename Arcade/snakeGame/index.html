@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Snake Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+		<!-- fullpage -->
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<!-- custom -->
+        <link rel = "stylesheet" href = "style.css">
+
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	    
+    </head>
+    <body>
+        <div id="wrapper">
+        <canvas id="snake" width="400" height="400"></canvas>
+        <div class="controls">
+            <div class = 'sider'>
+                <div class="control-button" id="left" onClick="Left()"><i class="fa fa-arrow-left"></i></div>
+            </div>
+            <div class="middle">
+                <div class="control-button", id="up" onClick="Up()"><i class="fa fa-arrow-up"></i></div>
+                <div class="control-button" id="down" onClick="Down()"><i class="fa fa-arrow-down"></i></div>
+            </div>
+            <div class="sider">
+                <div class="control-button" id="right" onClick="Right()"><i class="fa fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- Game Over Container -->
+    <div id="game-over-container" style="display:none">
+        <h1 class="game-over-title">Game Over</h1>
+        <button class="game-over-play-button" onClick="restart()">Play Again</button>
+    <div>
+    <!--Js file-->
+    <script src="snake.js"></script>
+    </body>
+    
+</html>

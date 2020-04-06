@@ -1,3 +1,41 @@
+//first check if the device is a phone
+//game optimized for desktop browsers
+function Redirect() {
+    window.location = "https://amayomode.github.io/";
+ }
+
+// device detection
+const isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+if(isMobile.any()) {
+    //redirect
+    alert("This Game is best played when using a laptop or DeskTop Computer");
+    alert("You will be redirected to home page in 10 sec.");
+    setTimeout('Redirect()', 10000);
+ }
+
+
+//game code
+
 //canvas
 const cvs = document.getElementById("snake");
 const ctx = cvs.getContext("2d");
@@ -8,7 +46,7 @@ const gameOn = document.getElementById("wrapper");
 
 //restart
 function restart(){
-    location.reload()
+    location.reload();
 }
 // pixel unit
 const box = 21;

@@ -28,9 +28,9 @@ const isMobile = {
 
 if(isMobile.any()) {
     //redirect
-    alert("This Game is best played when using a laptop or DeskTop Computer");
-    alert("You will be redirected to home page in 10 sec.");
-    setTimeout('Redirect()', 10000);
+    alert("This game is best played when using a laptop or desktop computer");
+    alert("You will be redirected to home page in 5 sec.");
+    setTimeout('Redirect()', 5000);
  }
 
 

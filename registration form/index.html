@@ -4,33 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type = "text/css" href="form-styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Responsive Form</title>
 </head>
 <body>
     <header></header>
-    <main class="first">
-        <div class="top">
-            <h1 class="word">Learn to code by<br>watching others</h1>
+    <main>
+        <section class="main-text">
+            <h1>Learn to code by<br>watching others</h1>
             <p>See how experienced developers solve problems in real-time.
                 <br>Watching scripted tutorials is great, but understanding how
                 <br>developers think is invaluable</br>
             </p>
-        </div>
-        <div class="big">
-            <div class="sign-cap">
+        </section>
+        <section class="main-form">
+            <div class="promo">
                 <p><b>Try it free 7days</b> then $20/mo.thereafter</p>
             </div>
-            <div class="login">
-                <input type="text" placeholder="Jonathan">
-                <input type="text" placeholder="Last Name">
-                <input type="text" placeholder="Email Address">
-                <input type="text" placeholder="Password">
-                <button>CLAIM YOUR FREE TRIAL</button>
-                <p>By clicking the button, You are agreeing to our <span>Terms and Services</span></p>
+            <div class = "login">
+                <form>
+                        <input type="text" class ="err" placeholder="Jonathan" required>
+                        <p class = "error-message">First Name cannot be empty</p>
+
+                        <input type="text" class ="err" placeholder="Last Name" required>
+                        <p class="error-message">Last Name cannot be empty</p>
+
+                        <input type="email" class ="err" placeholder="Email Address" required>
+                        <p class="error-message">Looks like this is not an email</p>
+
+                        <input type="password" class ="err" placeholder="Password" required>
+                        <p class="error-message">Password Name cannot be empty</p>
+
+                        <input type="submit" value ="CLAIM YOUR FREE TRIAL">
+                        <p>By clicking the button, You are agreeing to our <b>Terms and Services</b></p>
+                </form>
             </div>
-        </div>
+        </section>
     </main>
     <footer></footer>
 </body>

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     box-sizing: border-box;
 
@@ -13,29 +11,29 @@ body {
     padding: 70px 100px;
 }
 
-.first {
-    padding-left: 50px;
+main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
 }
 
-.top {
-
+.main-text {
     color: white;
+    margin-right: 10%;
 }
 
-.top h1 {
-    line-height: 30px;
+.main-text h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
 }
 
-.top p {
-    font-size: small;
+.main-text p {
+    font-size: 16px;
 
 }
 
-.big {
+.main-form {
     padding-right: 50px;
     display: flex;
     flex-direction: column;
@@ -43,80 +41,126 @@ body {
     justify-content: center;
 }
 
-.sign-cap {
+.promo {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
-    width: 400px;
+    width: 450px;
     text-align: center;
     font-size: small;
     background-color: hsl(248, 32%, 49%);
     border-radius: 10px;
-    box-shadow: 2px 5px 2px rgb(101, 99, 99);
+    box-shadow: 0px 7px 0px rgb(101, 99, 99, 0.3);
     color: white;
 }
 
 .login {
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    width: 450px;
     margin-top: 30px;
     border: 1px solid black;
     background-color: white;
-    padding: 30px 0px;
+    padding: 25px;
     border: none;
     border-radius: 10px;
-    box-shadow: 2px 5px 2px rgb(101, 99, 99);
+    box-shadow: 0px 5px 0px rgb(101, 99, 99, 0.3);
 
 }
 
-.login p {
-    color: hsl(0, 4%, 67%);
-}
-
-.login p span {
-    color: hsl(0, 100%, 74%);
-}
-
-.login input {
+.login input{
     height: 50px;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 400px;
     margin: 5px;
     padding: 0px;
     padding-left: 20px;
-    border: 1px solid black;
+    border: 1px solid hsl(246, 25%, 77%);
     border-radius: 5px;
 }
 
-.login p {
-    font-size: 10px;
+.login input:focus{
+    border: 2px solid green;
 }
-
-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 350px;
+.login input[type=submit]{
     background-color: hsl(154, 59%, 51%);
     color: white;
-    font-size: small;
+    font-weight: 600;
     border: none;
     border-radius: 5px;
 
 }
+.login p {
+    font-size: 10px;
+    color: hsl(0, 4%, 67%);
+    text-align: center;
+}
+
+.login b {
+    color: hsl(0, 100%, 74%);
+}
+
+.login .error-message {
+    display: none;
+}
+
+input:not([type=submit]):focus:invalid + p{
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    display: block;
+}
+
+input:not([type=submit]):focus:invalid{
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 360px 12px;
+}
+
+input[type=submit]:hover{
+    background-color: hsl(154, 91%, 58%);
+    box-shadow: 0px 5px 0px hsl(154, 59%, 51%);
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 600px) {
-    .first {
+    body{
+        background-image: url(./images/bg-intro-mobile.png);
+        padding: 30px 15px;
+    }
+    main {
         display: grid;
         grid-template-columns: 1fr;
     }
 
+    .main-text h1 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .main-text p {
+        font-size: small;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .promo{
+        width:250px;
+        padding:40px;
+    }
+    .login{
+        width:250px;
+    }
+    .login input {
+        width: 200px;
+    }
+    .login input[type=submit] {
+        text-align: center;
+        font-weight: 500;
+        padding: 5px;
+    }
+    input:not([type=submit]):focus:invalid {
+        background-image: url(./images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: 160px 12px;
+    }
 }

@@ -124,11 +124,16 @@ input[type=submit]:hover{
 @media screen and (max-width: 600px) {
     body{
         background-image: url(./images/bg-intro-mobile.png);
-        padding: 30px 15px;
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 0px;
     }
     main {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
     }
 
     .main-text h1 {
